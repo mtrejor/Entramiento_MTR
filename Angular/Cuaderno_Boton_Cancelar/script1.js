@@ -14,6 +14,11 @@ function AlumnosController($scope){
   $scope.Cancel=function () {
 	 $scope.formVisibility=false;
     console.log($scope.formVisibility)
+
+    // need to clean form's fields
+    $scope.nuevoAlumno.nombre = '';
+    $scope.nuevoAlumno.telefono = '';
+    $scope.nuevoAlumno.curso = '';
   }
 
   $scope.ShowForm=function(){
